@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.campaign-cards {
+  margin-right: calc(50% - 50vw);
+  @include mq(md){
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+
+.campaign-cards__item {
+  width: 280px;
+  height: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: rem(1);
+
+  /* ボックスシャドウの設定 */
+  @include mq("md") {
+    width: 333px;
+  }
+}
+
+.campaign-cards__item + .campaign-cards__item {
+  margin-left: rem(40);
+}
+

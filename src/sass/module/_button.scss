@@ -1,0 +1,68 @@
+@use "global" as *;
+
+.button__base{
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  text-align: left;
+  background-color: $green-accent;
+  border: 1px solid $green-accent;
+  font-size: rem(14);
+  font-weight: $normal;
+  font-family: $en-font-family;
+  color: $white;
+  width: rem(200);
+  padding: rem(20) 0 rem(20) rem(40) ;
+}
+
+.button__base::before{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: rem(6);
+  left: rem(4);
+  width: rem(200);
+  height: rem(54);
+  border: 1px solid $green-accent; /* 枠線の設定 */
+  box-sizing: border-box; /* 枠線を要素のサイズに含める */
+}
+
+.button__base::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -1;
+}
+
+.button__arrow{
+  z-index: 1;
+  position: absolute;
+  top: 42%;
+  right: rem(40);
+  width: rem(40);
+  height: rem(6);
+  border-bottom: 1px solid $white;
+  border-right: 1px solid $white;
+  transform: skew(45deg);
+}
+
+.button__base:hover{
+  color: $green-accent;
+}
+
+.button__base:hover .button__arrow{
+  border-bottom: 1px solid $green-accent;
+  border-right: 1px solid $green-accent;
+}
+
+.button__base:hover::after {
+  transform: scale(1, 1);
+}

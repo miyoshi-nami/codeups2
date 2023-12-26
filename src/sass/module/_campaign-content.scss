@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.campaign-content {
+  padding: prem(20) prem(25) prem(25);
+  @include mq(md){
+      padding: prem(25) prem(30) prem(30);
+  }
+}
+
+.campaign-content__category {
+  width: fit-content;
+  padding: rem(8) rem(12);
+  border: 1px solid $green-accent;
+  font-family: $jp1-font-family;
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1;
+  color: $green-accent;
+}
+
+.campaign-content__title {
+  margin-top: rem(4);
+  padding-bottom: rem(8);
+  border-bottom: 1px solid $green-accent;
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: 24/16;
+}
