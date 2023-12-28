@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.arrow__prev {
+  @include mq("md") {
+    position: absolute;
+    top: rem(-100);
+    left: clamp(63%, 50vw, 72%);
+    transform: translateX(-50%);
+    width: rem(80);
+    height: rem(80);
+    object-fit: cover;
+  }
+
+}
+
+.arrow__next {
+
+  @include mq("md") {
+    position: absolute;
+    top: rem(-100);
+    left: clamp(73%, 63vw, 82%);
+    transform: translateX(-50%);
+    width: rem(80);
+    height: rem(80);
+  }
+}
