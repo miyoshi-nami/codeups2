@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.about-content {
+  width: 100%;
+
+  @include mq("md") {
+    display: flex;
+    position: absolute;
+    top: rem(200);
+    justify-content: right;
+  }
+}
+
+.about-content__title {
+  margin-top: rem(50);
+  font-family: $en-font-family;
+  font-size: rem(40);
+  font-weight: $regular;
+  color: $green-accent;
+  line-height: (calc(40/40));
+  z-index: 500;
+
+  @include mq("md") {
+    width: fit-content;
+    margin-top: 0;
+    color: $white;
+    font-size: rem(80);
+    line-height: (calc(100/80));
+  }
+}
+
+.about-content__text {
+  @include mq("md") {
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
+}

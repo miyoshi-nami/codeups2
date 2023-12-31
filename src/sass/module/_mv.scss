@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.mv {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  min-height: prem(400);
+}
+
+.mv__inner {
+  height: inherit;
+  min-height: inherit;
+}
+
+.mv__title-wrap {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.mv__main-title {
+  font-size: rem(40);
+  font-family: $en2-font-family;
+  font-weight: $normal;
+  letter-spacing: rem(21.6);
+  @include mq(md){
+      font-size: rem(80);
+  }
+}
+
+.mv__sub-title {
+  margin-top: rem(20);
+  font-size: rem(20);
+  font-family: $en-font-family;
+  font-weight: $regular;
+  @include mq(md){
+      
+  }
+}
+
+.mv__slick,
+.mv__slick .slick-list,
+.mv__slick .slick-track,
+.mv__slick-img,
+.mv__slick-img img {
+  height: inherit;
+  min-height: inherit;
+}
+
+.mv__slick-img img {
+  width: 100%;
+  object-fit: cover;
+}

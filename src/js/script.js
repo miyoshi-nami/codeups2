@@ -3,13 +3,13 @@ jQuery($(document).ready(function ($) {
   // ナビバータグル
   $('.js-hamburger').on('click', function () {
     if ($('.js-hamburger').hasClass('is-open')) {
-      $('.js-drawer-menu').fadeOut();
+      $('.js-drawer').fadeOut();
       $(this).removeClass('is-open');
       $('.body').removeClass('is-open');
       $('.gotop').removeClass('is-open');
       $('.header').removeClass('headerColorScroll');
     } else {
-      $('.js-drawer-menu').fadeIn();
+      $('.js-drawer').fadeIn();
       $(this).addClass('is-open');
       $('.body').addClass('is-open');
       $('.gotop').addClass('is-open');
@@ -17,18 +17,17 @@ jQuery($(document).ready(function ($) {
     }
   });
 
-
   // ページ内リンクがクリックされたときの処理
   $('#menu a').on('click', function (event) {
     var href = $(this).attr('href');
     if (href.startsWith('#')) {
       $('.js-drawer-menu').fadeOut();
-      $('.js-hamburger').removeClass('is-open');
+      $('.js-drawer').removeClass('is-open');
     }
   });
 
   // slick1のスライダー
-  $(".slider1").on("init", function () {
+  $(".js-mv-slick").on("init", function () {
     $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
   }).slick({
     autoplay: true,
@@ -40,8 +39,8 @@ jQuery($(document).ready(function ($) {
     pauseOnHover: false,
   }).on({
     beforeChange: function (event, slick, currentSlide, nextSlide) {
-      $(".slick-slide", this).eq(nextSlide).addClass("add-animation");
-      $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+      $(".mv__slick-img", this).eq(nextSlide).addClass("add-animation");
+      $(".mv__slick-img", this).eq(currentSlide).addClass("remove-animation");
     },
     afterChange: function () {
       $(".remove-animation", this).removeClass("remove-animation add-animation");

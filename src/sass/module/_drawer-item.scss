@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.drawer-item {
+  display: block;
+  font-size: rem(16);
+  font-family: $jp1-font-family;
+  font-weight: $regular;
+  line-height: calc(18/16);
+  color: #fff;
+  }

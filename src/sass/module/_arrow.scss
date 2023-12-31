@@ -4,7 +4,7 @@
   @include mq("md") {
     position: absolute;
     top: rem(-100);
-    left: clamp(63%, 50vw, 72%);
+    left: clamp(71%, 50vw, 72%);
     transform: translateX(-50%);
     width: rem(80);
     height: rem(80);
@@ -18,7 +18,7 @@
   @include mq("md") {
     position: absolute;
     top: rem(-100);
-    left: clamp(73%, 63vw, 82%);
+    left: clamp(80%, 63vw, 82%);
     transform: translateX(-50%);
     width: rem(80);
     height: rem(80);

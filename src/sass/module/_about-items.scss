@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.about-items{
+  width: 100%;
+  position: relative;
+  aspect-ratio: calc(1080/1440)/calc(661/1440);
+}
+
+.about-items__img01 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(400/1080)*100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.about-items__img02 img {
+  object-fit: cover;
+  width: calc(880/1080)*100%;
+  margin-left: auto;
+  padding-top: rem(20);
+  @include mq("md"){
+    padding-top: rem(80);
+  }
+}
+
+.about-items__img03  {
+  display: none;
+
+  @include mq("md") {
+    display: block;
+    position: absolute;
+    bottom: rem(-87);
+    left: min(77vw, 91%);
+    width: rem(194);
+    height: auto;
+  }
+}

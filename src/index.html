@@ -35,8 +35,8 @@
   <script src="./assets/js/jquery.inview.min.js"></script>
 </head>
 
-<body>
-  <header class="header layout-header">
+<body class="body">
+  <header class="header layout-header js-header">
     <div class="header__inner">
       <h1 class="header__logo">
         <a href="#">
@@ -46,16 +46,25 @@
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item">
-            <a href="#">News<span>お知らせ</span></a>
+            <a href="#">Campaign<span>キャンペーン</span></a>
           </li>
           <li class="header__nav-item">
             <a href="#">About us<span>私たちについて</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="#">Works<span>制作実績</span></a>
+            <a href="#">Information<span>ダイビング情報</span></a>
           </li>
           <li class="header__nav-item">
             <a href="#">Blog<span>ブログ</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Voice<span>お客様の声</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Price<span>料金一覧</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">FAQ<span>よくある質問</span></a>
           </li>
           <li class="header__nav-item">
             <a href="#">Contact<span>お問い合わせ</span></a>
@@ -68,22 +77,72 @@
         <span></span>
       </button>
       <div class="header__drawer js-drawer">
-        <nav class="header__drawer-nav">
+        <nav class="header__drawer-nav inner">
           <ul class="header__drawer-items">
-            <li class="header__drawer-item">
-              <a href="#">News</a>
+            <li class="header__drawer-item drawer-items">
+              <a href="#">キャンペーン</a>
+              <ul class="drawer-items__items">
+                <li class="drawer-items__item drawer-item">
+                  <a href="#">ライセンス取得</a>
+                </li>
+                <li class="drawer-items__item drawer-item">
+                  <a href="#">貸切体験ダイビング</a>
+                </li>
+                <li class="drawer-items__item drawer-item">
+                  <a href="#">ナイトダイビング</a>
+                </li>
+              </ul>
             </li>
-            <li class="header__drawer-item">
-              <a href="#">About us</a>
+            <li class="header__drawer-item drawer-items">
+              <a href="#">私たちについて</a>
             </li>
-            <li class="header__drawer-item">
-              <a href="#">Works</a>
+            <li class="header__drawer-item drawer-items">
+              <a href="#">ダイビング情報</a>
+              <ul class="drawer-items__items">
+                <li class="drawer-items__item drawer-item">
+                  <a href="#">ライセンス講習</a>
+                </li>
+                <li class="drawer-items__item drawer-item">
+                  <a href="#">体験ダイビング</a>
+                </li>
+                <li class="drawer-items__item drawer-item">
+                  <a href="#">ファンダイビング</a>
+                </li>
+              </ul>
             </li>
-            <li class="header__drawer-item">
-              <a href="#">Blog</a>
+            <li class="header__drawer-item drawer-items">
+              <a href="#">ブログ</a>
             </li>
-            <li class="header__drawer-item">
-              <a href="#">Contact</a>
+          </ul>
+          <ul class="header__drawer-items">
+            <li class="header__drawer-item drawer-items">
+              <a href="#">お客様の声</a>
+            </li>
+            <li class="header__drawer-item drawer-items">
+              <a href="#">料金一覧</a>
+              <ul class="drawer-items__items">
+                <li class="drawer-items__item drawer-item">
+                  <a href="#">ライセンス取得</a>
+                </li>
+                <li class="drawer-items__item drawer-item">
+                  <a href="#">体験ダイビング</a>
+                </li>
+                <li class="drawer-items__item drawer-item">
+                  <a href="#">ファンダイビング</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__drawer-item drawer-items">
+              <a href="#">よくある質問</a>
+            </li>
+            <li class="header__drawer-item drawer-items">
+              <a href="#">プライバシーポリシー</a>
+            </li>
+            <li class="header__drawer-item drawer-items">
+              <a href="#">利用規約</a>
+            </li>
+            <li class="header__drawer-item drawer-items">
+              <a href="#">お問い合わせ</a>
             </li>
           </ul>
         </nav>
@@ -91,6 +150,28 @@
     </div>
   </header>
   <main>
+    <section class="mv">
+      <div class="mv__inner">
+        <div class="mv__title-wrap">
+          <h2 class="mv__main-title">DIVING</h2>
+          <p class="mv__sub-title">into the ocean</p>
+        </div>
+        <div class="mv__slick js-mv-slick">
+          <picture class="mv__slick-img">
+            <source srcset="./assets/images/common/mv-pc01.jpg" media="(min-width: 768px)" />
+            <img src="./assets/images/common/mv-01.jpg" alt="海のイメージ写真01">
+          </picture>
+          <picture class="mv__slick-img">
+            <source srcset="./assets/images/common/mv-pc02.jpg" media="(min-width: 768px)" />
+            <img src="./assets/images/common/mv-02.jpg" alt="海のイメージ写真02">
+          </picture>
+          <picture class="mv__slick-img">
+            <source srcset="./assets/images/common/mv-pc03.jpg" media="(min-width: 768px)" />
+            <img src="./assets/images/common/mv-03.jpg" alt="海のイメージ写真03">
+          </picture>
+        </div>
+      </div>
+    </section>
     <section class="layout-campaign campaign">
       <div class="campaign__title  section-header">
         <p class="section-header__title">campaign</p>
@@ -174,6 +255,57 @@
           </div>
           <div class="campaign__button button">
             <a href="#" class="button__base">View more<span class="button__arrow"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="layout-about about">
+      <div class="about__title  section-header">
+        <p class="section-header__title">About us</p>
+        <h2 class="section-header__subtitle">私たちについて</h2>
+      </div>
+      <div class="about__works about-works">
+        <div class="about-works__inner inner">
+          <div class="about-works__items about-items">
+            <div class="about-items__img">
+              <picture class="about-items__img02">
+                <source srcset="./assets/images/common/ocean02-pc.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/ocean02.jpg" alt="海の写真">
+              </picture>
+              <picture class="about-items__img01">
+                <source srcset="./assets/images/common/ocean01-pc.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/ocean01.jpg" alt="シーサーの写真">
+              </picture>
+            </div>
+            <div class="about-items__text about-content">
+              <h3 class="about-content__title">Dive into<br>the Ocean</h3>
+              <div class="about-content__text about-text">
+                <p class="about-text__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                </p>
+                <div class="about-text__button button">
+                  <a href="#" class="button__base">View more<span class="button__arrow"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="about-items__img03"><img src="./assets/images/common/fish02.svg"
+                alt="サンゴのイラスト">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="layout-info info">
+      <div class="info__title  section-header">
+        <p class="section-header__title">Information</p>
+        <h2 class="section-header__subtitle">ダイビング情報</h2>
+      </div>
+      <div class="info__works info-works">
+        <div class="info-works__inner inner">
+          <div class="info-works__items info-items">
+            
+            
+           
           </div>
         </div>
       </div>

@@ -24,10 +24,10 @@
 .campaign-price__big {
   color: $green-accent;
   font-size: rem(32);
+  font-family: $en2-font-family;
   font-weight: $normal;
   line-height: 1;
   @include mq(md){
-      margin-top: rem(15);
-      font-size: rem(14);
+      font-size: rem(40);
   }
 }
