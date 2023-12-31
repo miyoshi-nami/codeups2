@@ -70,7 +70,7 @@ jQuery($(document).ready(function ($) {
 
 
   // 要素の取得とスピードの設定
-  $('.colorbox').each(function () {
+  $('.color-box').each(function () {
     $(this).append('<div class="color"></div>');
     var color = $(this).find('.color');
     var image = $(this).find('img');
@@ -87,7 +87,6 @@ jQuery($(document).ready(function ($) {
         counter = 1;
       }
     });
-  
 
   // pagetop
   var topBtn = $('.gotop');

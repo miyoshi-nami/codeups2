@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.info-text {
+  width: 100%;
+
+  @include mq("md") {
+    width: calc(50% - rem(48));
+    margin-left: rem(48);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+  }
+}
+
+.info-text__title {
+  margin-top: rem(25);
+  padding-bottom: rem(4);
+  text-align: left;
+  font-family: $jp1-font-family;
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $green;
+  letter-spacing: rem(calc(20/140));
+  line-height: 1;
+  border-bottom: 1px solid $green-accent;
+
+  @include mq("md") {
+    margin-top: rem(5);
+    font-size: rem(24);
+  }
+}
+
+.info-text__text {
+  margin-top: rem(9);
+}
+
+.info-text__button{
+  margin-top: rem(40);
+  text-align: center;
+}

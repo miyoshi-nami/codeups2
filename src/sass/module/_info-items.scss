@@ -1,2 +1,28 @@
 @use "global" as *;
 
+.info-items {
+  width: 100%;
+
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.info-items__img {
+
+  @include mq("md") {
+    width: calc(540/1080)*100%;
+    padding-top: 0;
+  }
+}
+
+.info-items__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-items__text {
+  @include mq("md") {}
+}

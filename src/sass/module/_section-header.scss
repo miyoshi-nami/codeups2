@@ -4,7 +4,7 @@
   text-align:center;
 }
 
-.section-header__title {
+.section-header__title ,.section-header__title-w {
   text-transform: lowercase;
   color: $green;
   font-family: $en-font-family;
@@ -22,11 +22,19 @@
   text-transform: capitalize;
 }
 
-.section-header__subtitle {
+.section-header__title-w::first-letter{
+  text-transform: capitalize;
+}
+
+.section-header__subtitle ,.section-header__subtitle-w{
   font-family: $jp2-font-family;
   color: $green-accent;
   line-height: calc(18/12);
   font-size: rem(12);
   text-align: center;
   padding-top: rem(3);
+}
+
+.section-header__title-w ,.section-header__subtitle-w{
+  color: $white;
 }
