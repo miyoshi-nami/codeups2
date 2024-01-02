@@ -5,9 +5,20 @@
 }
 
 .blog-works__items{
-  margin-top: rem(27);
+  margin-top: rem(24);
   // padding-top: rem(26);
   @include mq("md"){
-    margin-top:  rem(35);
+    margin-top:  rem(79);
+  }
+}
+
+.blog-works__button{
+  margin-top: rem(32);
+  padding-bottom: rem(5);
+  padding-right: rem(5);
+  text-align: center;
+
+  @include mq("md") {
+    margin-top: rem(64);
   }
 }

@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.voice-cards {
+  display: grid;
+  grid-row-gap: rem(40);
+
+  @include mq(md) {
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.voice-cards__item {
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}

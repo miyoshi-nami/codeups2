@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.contact-iframe {
+  width: 100%;
+  aspect-ratio: 273/148;
+  margin-inline: auto;
+
+  @include mq(md) {
+    margin-inline: 0;
+    width: calc(273/440)*100%;
+  }
+}
+
+.contact-iframe iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}

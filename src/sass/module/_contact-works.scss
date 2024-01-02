@@ -1,17 +1,17 @@
 @use "global" as *;
 
-.campaign-works__inner {
-  margin: auto;
-  padding: 0 rem(20);
+.contact-works__inner{
   max-width: rem(600);
-  width: 100%;
-  @include mq(md){
-      padding: 0 rem(25);
-      max-width: rem(1200);
-  }
 }
 
-.campaign-works__button{
+.contact-works__items {
+  @include mq("md") {
+    padding-top: rem(69);
+    padding-bottom: rem(91);
+   }
+}
+
+.contact-works__button{
   margin-top: rem(32);
   padding-bottom: rem(5);
   padding-right: rem(5);
@@ -21,4 +21,3 @@
     margin-top: rem(64);
   }
 }
-

@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.contact-address {
+  display: block;
+  width: 100%;
+}
+
+.contact-address__text {
+  line-height: calc(28/16);
+
+  @include mq(md) {
+    // width: calc(146/440)*100%;
+    text-align: left;
+  }
+}
+
+.contact-address__iframe {
+  margin-top: rem(16);
+
+  @include mq(md) {
+    margin-top: rem(0);
+  }
+}

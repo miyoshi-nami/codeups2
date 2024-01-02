@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.footer-items {
+  background-image: url(../images/common/hitode.png);
+  background-repeat: no-repeat;
+  background-size: rem(18);
+  background-position: 0 0;
+  padding-left: rem(20);
+  display: block;
+  font-size: rem(16);
+  font-family: $jp1-font-family;
+  font-weight: $bold;
+  line-height: calc(18/16);
+  color: #fff;
+  }
+
+  .footer-items__item{
+    margin-top: rem(24);
+  }

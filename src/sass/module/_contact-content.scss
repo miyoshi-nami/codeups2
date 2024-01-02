@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.contact-content{
+    
+  @include mq("md"){
+    padding-right: calc(115/1080)*100%;
+    padding-left: calc(81/1080)*100%;
+    }
+}
+
+.contact-content__button {
+  margin-top: rem(40);
+  text-align: center;
+}

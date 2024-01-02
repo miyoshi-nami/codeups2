@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.contact-map {
+  display: block;
+  // width: 100%;
+  width: calc(295/345)*100%;
+  margin-inline: auto;
+
+  @include mq("md") {
+    margin-inline: 0;
+    padding-left: calc(47/1080)*100%;
+    padding-right: calc(82/1080)*100%;
+  }
+}
+
+.contact-map__title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: rem(3);
+  border-bottom: 1px solid $green-accent;
+
+  @include mq("md") {
+    padding-bottom: rem(10);
+  }
+}
+
+.contact-map__title img {
+  width: calc(174/295)*100%;
+
+  @include mq(md) {
+    width: 42.149385%;
+  }
+}
+
+.contact-map__address {
+  width: 100%;
+  text-align: center;
+  margin-top: rem(14);
+
+  @include mq(md) {
+    display: flex;
+    width: 100%;
+    margin-top: rem(20);
+    justify-content: space-between;
+  }
+}

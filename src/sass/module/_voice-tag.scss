@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.voice-tag {
+  display: block;
+
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.voice-tag__user {
+  font-size: rem(14);
+  line-height: 1;
+  padding-bottom: rem(4);
+}

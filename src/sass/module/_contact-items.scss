@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.contact-items {
+  @include mq(md) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.contact-items__map {
+
+  @include mq(md) {
+    width: calc(570/1080)*100%;
+    border-right: 1px solid $green-accent;
+  }
+}
+
+.contact-items__content {
+
+  @include mq(md) {}
+}

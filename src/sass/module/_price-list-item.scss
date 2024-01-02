@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.price-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-list-item__title {
+  width: fit-content;
+  font-size: rem(14);
+  line-height: calc(24/14);
+}
+
+.price-list-item__price {
+  width: fit-content;
+  margin-left: rem(30);
+  font-size: rem(14);
+}

@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.voice-card {
+  display: block;
+  background-color: $white;
+}
+
+.voice-card__inner {
+  padding: rem(16) rem(16) rem(24);
+
+  @include mq("md") {
+    padding: rem(24);
+  }
+}
+
+.voice-card__text {
+  margin-top: rem(16);
+  font-size: rem(16);
+  line-height: calc(24/16);
+
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}

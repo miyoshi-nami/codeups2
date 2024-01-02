@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.blog-content__date {
+  font-size: rem(12);
+  line-height: calc(18/12);
+  font-family: $en-font-family;
+}
+
+.blog-content__title {
+  font-weight: $normal;
+  font-size: rem(16);
+  line-height: calc(24/16);
+  border-bottom: 1px solid $green-accent;
+  padding-bottom: rem(3);
+  }
+
+  .blog-content__text {
+    margin-top: rem(16);
+    font-size: rem(16);
+    line-height: calc(24/16);
+  }

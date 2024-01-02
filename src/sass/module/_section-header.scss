@@ -1,10 +1,11 @@
 @use "global" as *;
 
 .section-header {
-  text-align:center;
+  text-align: center;
 }
 
-.section-header__title ,.section-header__title-w {
+.section-header__title,
+.section-header__title-w {
   text-transform: lowercase;
   color: $green;
   font-family: $en-font-family;
@@ -22,11 +23,17 @@
   text-transform: capitalize;
 }
 
-.section-header__title-w::first-letter{
+.section-header__title-w::first-letter {
+  color: $green-accent;
   text-transform: capitalize;
+
+  @include mq("md") {
+    color: $white;
+  }
 }
 
-.section-header__subtitle ,.section-header__subtitle-w{
+.section-header__subtitle,
+.section-header__subtitle-w {
   font-family: $jp2-font-family;
   color: $green-accent;
   line-height: calc(18/12);
@@ -35,6 +42,36 @@
   padding-top: rem(3);
 }
 
-.section-header__title-w ,.section-header__subtitle-w{
-  color: $white;
+.section-header__title-w,
+.section-header__subtitle-w {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.section-header__title-contact::first-letter {
+  color: $green-accent;
+}
+
+.section-header__title-contact {
+  text-transform: capitalize;
+  color: $green;
+  font-family: $en-font-family;
+  font-weight: $normal;
+  line-height: 1;
+  margin-top: rem(50);
+  font-size: rem(80);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
+}
+
+.section-header__text {
+  margin-top: rem(8);
+  font-family: $jp2-font-family;
+  color: $green-accent;
+  line-height: calc(18/14);
+  font-size: rem(14);
+  text-align: center;
 }
